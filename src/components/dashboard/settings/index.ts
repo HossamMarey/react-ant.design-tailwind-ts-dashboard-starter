@@ -1,0 +1,7 @@
+export {default as MainProfile} from './MainProfile.tsx'
+export {default as MainChangePassword} from './MainChangePassword.tsx'
+export {default as MainEditInfo} from './MainEditInfo.tsx'
+export {default as EditInfoForm} from './EditInfoForm.tsx'
+export {default as MainSettings} from './MainSettings.tsx'
+export {default as SsoForm} from './SsoForm.tsx'
+export {default as MainSso} from './MainSso.tsx'
