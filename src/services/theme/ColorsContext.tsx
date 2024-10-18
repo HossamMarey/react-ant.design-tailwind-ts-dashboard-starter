@@ -145,7 +145,7 @@ export const ColorsProvider = ({ children, defaultDark }: { children: ReactNode,
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const root = document.querySelector('html')
-      const mainColors = isDark ? { ...MAIN_COLORS.dark } : { ...MAIN_COLORS.light }
+      const mainColors = isDark ? { ...computedColors.dark } : { ...computedColors.light }
       if (root) {
         Object.entries(mainColors).forEach(([key, value]) => {
           const hsl = convertColorFromHexToHsl(value as string)
@@ -153,7 +153,7 @@ export const ColorsProvider = ({ children, defaultDark }: { children: ReactNode,
         })
       }
     }
-  }, [isDark, updateCounter])
+  }, [isDark, updateCounter, computedColors])
 
 
 
