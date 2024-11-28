@@ -654,6 +654,7 @@
     "addEvent": "Add Event",
     "noErrorsOrWarningsOrInfoMessage": "There are no errors, infos or warnings to display",
     "yourData": "Your data",
-    "dragDropFileHere": "Drag and drop file(s) here"
+    "dragDropFileHere": "Drag and drop file(s) here",
+    "pageNotFound": "Page not found"
   }
 }

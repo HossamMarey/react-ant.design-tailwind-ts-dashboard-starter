@@ -650,6 +650,7 @@
 		"addEvent": "Dodaj zdarzenie",
 		"noErrorsOrWarningsOrInfoMessage": "Brak błędów, ostrzeżeń lub informacji",
 		"yourData": "Twoje dane",
-		"dragDropFileHere": "Przeciąż plik tutaj"
+		"dragDropFileHere": "Przeciąż plik tutaj",
+		"pageNotFound": "Strona nie znaleziona"
 	}
 }

@@ -613,6 +613,7 @@
     "addEvent": "Aggiungi Evento",
     "noErrorsOrWarningsOrInfoMessage": "Nessun errore, avviso o messaggio informativo",
     "yourData": "I tuoi dati",
-    "dragDropFileHere": "Trascina e rilascia file qui"
+    "dragDropFileHere": "Trascina e rilascia file qui",
+    "pageNotFound": "Pagina non trovata"
   }
 }

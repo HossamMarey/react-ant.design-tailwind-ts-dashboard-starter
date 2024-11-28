@@ -613,6 +613,7 @@
     "addEvent": "Event hinzufügen",
     "noErrorsOrWarningsOrInfoMessage": "Es gibt keine Fehler, Infos oder Warnungen anzuzeigen",
     "yourData": "Ihre Daten",
-    "dragDropFileHere": "Dateien hierher ziehen und loslassen"
+    "dragDropFileHere": "Dateien hierher ziehen und loslassen",
+    "pageNotFound": "Seite nicht gefunden"
   }
 }

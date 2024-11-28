@@ -16,7 +16,7 @@ import {
 } from './pages'
 
 import { DASHBOARD_ROUTES } from "./services/constants"
-import { ScrollToTop } from "./components/shared"
+import { HelmetPageTitle, ScrollToTop } from "./components/shared"
 import { DashLayout } from "./pages/dashboard"
 
 
@@ -41,9 +41,27 @@ const AppRouter = () => {
           {/* auth routes */}
           {/* redirect={authRedirect} */}
           <Route element={<AuthLayout />}>
-            <Route path="/" element={<LoginPage />} />
-            <Route path="/forget-password" element={<ForgetPasswordPage />} />
-            <Route path="/resetpassword" element={<ResetPasswordPage />} />
+            <Route
+              path="/"
+              element={
+                <HelmetPageTitle title="login" >
+                  <LoginPage />
+                </HelmetPageTitle>
+              }
+            />
+            <Route
+              path="/forget-password"
+              element={
+                <HelmetPageTitle title="forgetPassword" > <ForgetPasswordPage /> </HelmetPageTitle>
+              }
+            />
+            <Route path="/resetpassword"
+              element={
+                <HelmetPageTitle title="resetPassword" >
+                  <ResetPasswordPage />
+                </HelmetPageTitle>
+              }
+            />
           </Route>
 
           {/* dashboard routes */}
@@ -58,14 +76,22 @@ const AppRouter = () => {
                 <Route
                   key={'dash-' + r.key + '-' + ix}
                   path={r?.path?.startsWith('/') ? r?.path.slice(1) : r?.path}
-                  element={r.element}
+                  element={
+                    <HelmetPageTitle title={r?.label}>
+                      {r.element}
+                    </HelmetPageTitle>
+                  }
                 />
 
                 {!!r?.subRoutes?.length && r?.subRoutes?.map((l, lx) => (
                   <Route
                     key={'dash-sub-' + l.key + '-' + lx + r.key}
                     path={getSubPath(r?.path, l?.path)}
-                    element={l.element}
+                    element={
+                      <HelmetPageTitle title={r?.label} subTitle={l?.label}>
+                        {l.element}
+                      </HelmetPageTitle>
+                    }
                   />
                 ))}
 
@@ -76,7 +102,11 @@ const AppRouter = () => {
 
 
           <Route path="/logout" element={<LogoutPage />} />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route path="*" element={
+            <HelmetPageTitle title="pageNotFound" >
+              <NotFoundPage />
+            </HelmetPageTitle>
+          } />
         </Route>
       </Routes>
     </BrowserRouter>

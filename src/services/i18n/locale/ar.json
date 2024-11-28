@@ -619,6 +619,7 @@
 		"addEvent": "إضافة حدث",
 		"noErrorsOrWarningsOrInfoMessage": "لا توجد أخطاء أو تحذيرات أو معلومات",
 		"yourData": "بياناتك",
-		"dragDropFileHere": "اسحب وافلت ملف هنا"
+		"dragDropFileHere": "اسحب وافلت ملف هنا",
+		"pageNotFound": "صفحة غير موجودة"
 	}
 }

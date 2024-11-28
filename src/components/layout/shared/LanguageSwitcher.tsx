@@ -5,7 +5,7 @@ import { LanguageSquare, ArrowLeft2, ArrowRight2 } from "iconsax-react"
 
 import { useTranslation } from "react-i18next";
 import { LANGUAGES } from "@/services/i18n";
-import { useInitLanguage } from "@/services/hooks";
+import { useLanguage } from "@/services/hooks";
 import clientApi from "@/services/api/clientApi";
 import ReactCountryFlag from "react-country-flag"
 
@@ -20,7 +20,7 @@ const CFlag = ({ code, size = 16 }: { code: string, size?: number }) => <span cl
 
 const LanguageSwitcher = ({ isShort = false }) => {
 
-  const { changeLanguage, language, setLangToLocalStorage } = useInitLanguage()
+  const { changeLanguage, language, setLangToLocalStorage } = useLanguage()
   const { t } = useTranslation();
 
 

@@ -613,6 +613,7 @@
 		"addEvent": "Voeg evenement toe",
 		"noErrorsOrWarningsOrInfoMessage": "Geen fouten, waarschuwingen of informatie gevonden",
 		"yourData": "Je gegevens",
-		"dragDropFileHere": "Drag and drop file(s) here"
+		"dragDropFileHere": "Drag and drop file(s) here",
+		"pageNotFound": "Pagina niet gevonden"
 	}
 }

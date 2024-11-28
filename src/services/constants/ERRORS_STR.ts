@@ -1,8 +1,8 @@
 export const ERRORS_STR = {
-  INVALID_EMAIL: 'Invalid email',
-  INVALID_PASSWORD: 'Invalid password',
-  INVALID_NAME: 'Invalid name',
-  INVALID_SURNAME: 'Invalid surname',
+  INVALID_EMAIL: 'INVALID_EMAIL',
+  INVALID_PASSWORD: 'INVALID_PASSWORD',
+  INVALID_NAME: 'INVALID_NAME',
+  INVALID_SURNAME: 'INVALID_SURNAME',
   INVALID_PHONE: 'Invalid phone',
   INVALID_ADDRESS: 'Invalid address',
   INVALID_CITY: 'Invalid city',

@@ -1,12 +1,12 @@
 import { useEffect } from "react"
-import { useInitLanguage } from "@/services/hooks"
+import { useLanguage } from "@/services/hooks"
 import { clientApi } from "@/services/api"
 import AppRouter from "./AppRouter"
 
 
 function App() {
 
-  const { getLangFromLocalStorage, changeLanguage, setLangToLocalStorage } = useInitLanguage()
+  const { getLangFromLocalStorage, changeLanguage, setLangToLocalStorage } = useLanguage()
 
   useEffect(() => {
     const currentLang = getLangFromLocalStorage()

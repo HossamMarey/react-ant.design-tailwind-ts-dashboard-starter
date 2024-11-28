@@ -53,3 +53,4 @@ export const SEARCH_PARAMS_NAMES = {
 export const PASSWORD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()\-_=+{};:,<.>\/?[\]\\\|]).{8,}$/
 
 export const AUTH_TOKEN_ID = 'AUTH_TOKEN_ID'
+export const GLOBAL_DATE_FORMAT = 'YYYY-MM-DD'
